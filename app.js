@@ -1,8 +1,6 @@
 import express from 'express'
 import path from 'path'
 import logger from 'morgan'
-import cookieParser from 'cookie-parser'
-import bodyParser from 'body-parser'
 import favicon from 'serve-favicon'
 
 import routes from './routes'
@@ -16,9 +14,6 @@ app.engine('js', require('express-react-views').createEngine())
 
 // uncomment after placing your favicon in /public
 app.use(logger('dev'))
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(cookieParser())
 app.use(require('less-middleware')(path.join(__dirname, 'public')))
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(favicon(path.join(__dirname, '/public/favicon.ico')))
