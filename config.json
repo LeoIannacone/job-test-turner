@@ -5,5 +5,16 @@
     "access_token_key": "15306865-c3W5vgOgvX2aFWu1frbD7cw3saTpgKlNk0K8G7eWY",
     "access_token_secret": "Oeer5T5ihriX03356HJ0Z4NWDbQvlatUX5WWniErgqm14",
     "number_of_tweets": 10
-  }
+  },
+  "supported_browsers": [
+    "ie >= 9",
+    "ie_mob >= 10",
+    "ff >= 30",
+    "chrome >= 34",
+    "safari >= 6",
+    "opera >= 23",
+    "ios >= 6",
+    "android >= 4.4",
+    "bb >= 10"
+  ]
 }
