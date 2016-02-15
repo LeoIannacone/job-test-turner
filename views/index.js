@@ -4,6 +4,7 @@ import React from 'react'
 import TweetsList from './components/tweet-list'
 
 export default React.createClass({
+  displayName: 'Index',
 
   propTypes: {
     account: React.PropTypes.string
