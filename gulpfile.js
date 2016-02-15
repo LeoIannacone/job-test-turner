@@ -15,4 +15,4 @@ require('babel-core/register')({
 // Load all tasks from the tasks directory
 require('require-dir')('tasks')
 
-gulp.task('default', ['lint'])
+gulp.task('default', ['lint', '_test'])
